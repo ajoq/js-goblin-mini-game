@@ -1,0 +1,46 @@
+body {
+    margin: 0;
+}
+
+.game {
+    padding: 20px;
+}
+
+.field {
+    display: flex;
+    flex-wrap: wrap;
+    cursor: url(../img/hammer.png), auto;
+    max-width: 480px;
+    width: 100%;
+}
+
+.field-item {
+    outline: 1px solid #000;
+    width: 25%;
+}
+
+.field-item::before {
+    content: "";
+    display: block;
+    padding-top: 100%;
+}
+
+.field-item-img {
+    background-image: url(../img/goblin.png);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+}
+
+.hummer-bang {
+    cursor: url(../img/hammer-bang.png), auto;
+}
+
+.game-over {
+    color: red;
+    display: none;
+}
+
+.display {
+    display: block;
+}
